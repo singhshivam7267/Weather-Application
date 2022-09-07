@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="index.min.css">
+
+</head>
+
+<body class='body'>
+
+  <div class='content'>
+
+    <header class='header'>
+      <div class='menu menu__btn menu--loc'></div>
+      <h1 class='h1'>Current weather for your location</h1>
+    </header>
+
+    <div class='row col992px'>
+      <div class='temp'></div>
+      <div class='row row__city'>
+        <div class='name'></div>
+        <div class='icon'></div>
+      </div>
+    </div>
+
+    <main class='weather row row__weather'>
+      <div class='hum'></div>
+      <div class='press'></div>
+      <div class='wind'></div>
+    </main>
+
+    <form onsubmit='return false' class='menu row row__menu'>
+      <input type='text' class='menu menu__city' placeholder='Different city name'></input>
+      <div type='button' class='menu menu__btn menu--search'>Search</div>
+    </form>
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
